@@ -2,7 +2,7 @@
 
 @interface MyTest: NSObject
 
-@property (nontomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *name;
 
 - (void)run;
 

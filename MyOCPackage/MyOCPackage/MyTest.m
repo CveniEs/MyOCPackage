@@ -1,6 +1,6 @@
 #import "MyTest.h"
 
-@implementation
+@implementation MyTest
 
 - (void)run {
 	NSLog(@"run");
