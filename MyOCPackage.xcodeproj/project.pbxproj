@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A793EDA25013FC300548BC1 /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A793ED925013FC300548BC1 /* MyTest.m */; };
+		3ADA33B82501DD43006AD96F /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA33B52501DD43006AD96F /* MyTest.m */; };
+		3ADA33B92501DD43006AD96F /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA33B72501DD43006AD96F /* MyTest.m */; };
 		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A793ED825013FC300548BC1 /* MyTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTest.h; sourceTree = "<group>"; };
-		3A793ED925013FC300548BC1 /* MyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
+		3ADA33B42501DD43006AD96F /* MyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTest.h; sourceTree = "<group>"; };
+		3ADA33B52501DD43006AD96F /* MyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
+		3ADA33B62501DD43006AD96F /* MyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTest.h; sourceTree = "<group>"; };
+		3ADA33B72501DD43006AD96F /* MyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
 		"MyOCPackage::MyOCPackage::Product" /* MyOCPackage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyOCPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -33,18 +36,36 @@
 		3A793ECE25013ECB00548BC1 /* MyOCPackage */ = {
 			isa = PBXGroup;
 			children = (
-				3A793ED725013FBA00548BC1 /* MyOCPackage */,
+				3ADA33B12501DD43006AD96F /* MyOCPackage */,
 			);
 			path = MyOCPackage;
 			sourceTree = "<group>";
 		};
-		3A793ED725013FBA00548BC1 /* MyOCPackage */ = {
+		3ADA33B12501DD43006AD96F /* MyOCPackage */ = {
 			isa = PBXGroup;
 			children = (
-				3A793ED825013FC300548BC1 /* MyTest.h */,
-				3A793ED925013FC300548BC1 /* MyTest.m */,
+				3ADA33B22501DD43006AD96F /* MyOCPackage */,
 			);
 			name = MyOCPackage;
+			sourceTree = "<group>";
+		};
+		3ADA33B22501DD43006AD96F /* MyOCPackage */ = {
+			isa = PBXGroup;
+			children = (
+				3ADA33B32501DD43006AD96F /* include */,
+				3ADA33B62501DD43006AD96F /* MyTest.h */,
+				3ADA33B72501DD43006AD96F /* MyTest.m */,
+			);
+			path = MyOCPackage;
+			sourceTree = "<group>";
+		};
+		3ADA33B32501DD43006AD96F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				3ADA33B42501DD43006AD96F /* MyTest.h */,
+				3ADA33B52501DD43006AD96F /* MyTest.m */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 		OBJ_14 /* Products */ = {
@@ -55,7 +76,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				3A793ECE25013ECB00548BC1 /* MyOCPackage */,
@@ -63,7 +84,6 @@
 				OBJ_14 /* Products */,
 				OBJ_17 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,7 +135,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -131,7 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3A793EDA25013FC300548BC1 /* MyTest.m in Sources */,
+				3ADA33B82501DD43006AD96F /* MyTest.m in Sources */,
+				3ADA33B92501DD43006AD96F /* MyTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
